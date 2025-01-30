@@ -41,8 +41,9 @@ COPY INTO unconfirmed_transactions
 
 select * from unconfirmed_transactions;
 
-SELECT
-    SRC
-    FROM unconfirmed_transactions;
-
-
+SELECT 
+    flattened.VALUE:op::string as type,
+    flattened.VALUE:x:lock_time::int AS lock_time,
+    flattened.VALUE:x:ver::int AS version
+FROM unconfirmed_transactions,
+LATERAL FLATTEN(input => parse_json(src)) AS flattened;
