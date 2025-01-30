@@ -41,9 +41,55 @@ COPY INTO unconfirmed_transactions
 
 select * from unconfirmed_transactions;
 
+-- general Transaction table
 SELECT 
     flattened.VALUE:op::string as type,
+    flattened.VALUE:x:hash::string AS hash_number,
     flattened.VALUE:x:lock_time::int AS lock_time,
-    flattened.VALUE:x:ver::int AS version
+    flattened.VALUE:x:ver::int AS version,
+    flattened.VALUE:x:size::int AS byte_size,
+    flattened.VALUE:x:time::int AS time,
+    flattened.VALUE:x:tx_index::int AS tx_index,
+    flattened.VALUE:x:vin_sz::int AS no_ofinput_transaction,
+    flattened.VALUE:x:vout_sz::int AS on_ofoutput_transaction,
+    flattened.VALUE:x:relayed_by::string AS ip_address_node
 FROM unconfirmed_transactions,
 LATERAL FLATTEN(input => parse_json(src)) AS flattened;
+
+
+
+-- Input table
+SELECT 
+    flattened_tx.VALUE:x:hash::string AS transaction_hash,
+    input.value:sequence::int AS sequence,
+    input.value:prev_out:addr::string AS input_address,
+    input.value:prev_out:spent::boolean AS spent,
+    input.value:prev_out:tx_index::int AS prev_tx_index,
+    input.value:prev_out:value::int AS input_value_satoshis,
+    input.value:prev_out:n::int AS prev_output_index,
+    input.value:prev_out:script::string AS prev_script_sig
+FROM unconfirmed_transactions,
+LATERAL FLATTEN(input => parse_json(src)) AS flattened_tx,
+LATERAL FLATTEN(input => flattened_tx.VALUE:x:inputs) AS input;  -- This remains unchanged
+
+
+
+
+
+
+--output transactions
+SELECT 
+    flattened_tx.VALUE:x:hash::string AS transaction_hash,
+    output.value:spent::BOOLEAN AS spent,
+    output.value:tx_index::INT AS type,
+    output.value:addr::string AS output_address,
+    output.value:value::int AS bitcoin,
+    output.value:n::int AS output_index,
+    output.value:script::string AS script_pub_key
+
+FROM unconfirmed_transactions,
+LATERAL FLATTEN(input => parse_json(src)) AS flattened_tx,
+LATERAL FLATTEN(input => flattened_tx.VALUE:x:out) AS output;
+
+
+
