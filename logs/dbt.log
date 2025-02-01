@@ -1,0 +1,284 @@
+[0m13:31:10.320926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001834A43B4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001834A6FA0C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018345C0ED20>]}
+
+
+============================== 13:31:10.337940 | 3d52be08-5fbc-444e-a670-1de62171d6e7 ==============================
+[0m13:31:10.337940 [info ] [MainThread]: Running with dbt=1.9.2
+[0m13:31:10.338924 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\eobay\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m13:31:48.511215 [debug] [MainThread]: Starter project path: C:\Users\eobay\Documents\Crypto-Whale-Alert-System\myenv\Lib\site-packages\dbt\include\starter_project
+[0m13:31:48.554296 [info ] [MainThread]: 
+Your new dbt project "bitcoin_pipline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:31:48.555820 [info ] [MainThread]: Setting up your profile.
+[0m13:37:24.994207 [info ] [MainThread]: Profile bitcoin_pipline written to C:\Users\eobay\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:37:25.052641 [debug] [MainThread]: Command `dbt init` succeeded at 13:37:25.045172 after 374.99 seconds
+[0m13:37:25.077970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001834A43B4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001834AAC46E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018361A3EDE0>]}
+[0m13:37:25.096233 [debug] [MainThread]: Flushing usage events
+[0m13:37:25.783168 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:45:19.707659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2B0134E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2B2688F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2B0384620>]}
+
+
+============================== 14:45:19.721665 | aacf581e-8e9d-49a4-b386-00b80b6e554f ==============================
+[0m14:45:19.721665 [info ] [MainThread]: Running with dbt=1.9.2
+[0m14:45:19.722960 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\eobay\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m14:45:19.723981 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\eobay\Documents\Crypto-Whale-Alert-System\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:45:19.725988 [debug] [MainThread]: Command `dbt deps` failed at 14:45:19.725988 after 0.25 seconds
+[0m14:45:19.725988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2B003ECF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2B2894DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2B2896330>]}
+[0m14:45:19.726974 [debug] [MainThread]: Flushing usage events
+[0m14:45:20.141602 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:41:10.520397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAFBAC2BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAF8D3B8C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAFBD403B0>]}
+
+
+============================== 16:41:10.533399 | 990f373d-a67d-4480-8108-416dabda63ea ==============================
+[0m16:41:10.533399 [info ] [MainThread]: Running with dbt=1.9.2
+[0m16:41:10.535396 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\eobay\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:41:10.607395 [info ] [MainThread]: dbt version: 1.9.2
+[0m16:41:10.609395 [info ] [MainThread]: python version: 3.12.3
+[0m16:41:10.611395 [info ] [MainThread]: python path: C:\Users\eobay\Documents\Crypto-Whale-Alert-System\myenv\Scripts\python.exe
+[0m16:41:10.613398 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m16:41:12.992402 [info ] [MainThread]: Using profiles dir at C:\Users\eobay\.dbt
+[0m16:41:12.994397 [info ] [MainThread]: Using profiles.yml file at C:\Users\eobay\.dbt\profiles.yml
+[0m16:41:12.996396 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\eobay\Documents\Crypto-Whale-Alert-System\dbt_project.yml
+[0m16:41:13.000399 [info ] [MainThread]: adapter type: snowflake
+[0m16:41:13.003397 [info ] [MainThread]: adapter version: 1.9.0
+[0m16:41:13.005400 [info ] [MainThread]: Configuration:
+[0m16:41:13.006400 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:41:13.008398 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:41:13.010400 [info ] [MainThread]: Required dependencies:
+[0m16:41:13.012400 [debug] [MainThread]: Executing "git --help"
+[0m16:41:13.211396 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:41:13.213398 [debug] [MainThread]: STDERR: "b''"
+[0m16:41:13.214396 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:41:13.216395 [info ] [MainThread]: Connection:
+[0m16:41:13.217397 [info ] [MainThread]:   account: yp89889.uk-south.azure
+[0m16:41:13.219396 [info ] [MainThread]:   user: DIGIT
+[0m16:41:13.220395 [info ] [MainThread]:   database: BITCOIN_TRANSCATIONS
+[0m16:41:13.221401 [info ] [MainThread]:   warehouse: BITCON_COMPUTE
+[0m16:41:13.223397 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m16:41:13.224396 [info ] [MainThread]:   schema: PUBLIC
+[0m16:41:13.226394 [info ] [MainThread]:   authenticator: None
+[0m16:41:13.227399 [info ] [MainThread]:   oauth_client_id: None
+[0m16:41:13.228402 [info ] [MainThread]:   query_tag: None
+[0m16:41:13.230395 [info ] [MainThread]:   client_session_keep_alive: False
+[0m16:41:13.231396 [info ] [MainThread]:   host: None
+[0m16:41:13.233397 [info ] [MainThread]:   port: None
+[0m16:41:13.235399 [info ] [MainThread]:   proxy_host: None
+[0m16:41:13.236394 [info ] [MainThread]:   proxy_port: None
+[0m16:41:13.238398 [info ] [MainThread]:   protocol: None
+[0m16:41:13.240411 [info ] [MainThread]:   connect_retries: 1
+[0m16:41:13.241396 [info ] [MainThread]:   connect_timeout: None
+[0m16:41:13.242396 [info ] [MainThread]:   retry_on_database_errors: False
+[0m16:41:13.243396 [info ] [MainThread]:   retry_all: False
+[0m16:41:13.244402 [info ] [MainThread]:   insecure_mode: False
+[0m16:41:13.246399 [info ] [MainThread]:   reuse_connections: True
+[0m16:41:13.249400 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m16:41:14.375394 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m16:41:14.627923 [debug] [MainThread]: Using snowflake connection "debug"
+[0m16:41:14.628922 [debug] [MainThread]: On debug: select 1 as id
+[0m16:41:14.628922 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:41:14.636916 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m16:41:14.637916 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m16:41:14.637916 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:41:14.638916 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:41:14.639917 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\eobay\Documents\Crypto-Whale-Alert-System\dbt_project.yml> not found
+
+[0m16:41:14.640917 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  An unknown error happened while loading 'C:\Users\eobay\.snowflake\connections.toml'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:41:14.641940 [debug] [MainThread]: Command `dbt debug` failed at 16:41:14.641940 after 4.43 seconds
+[0m16:41:14.642924 [debug] [MainThread]: Connection 'debug' was left open.
+[0m16:41:14.643915 [debug] [MainThread]: On debug: No close available on handle
+[0m16:41:14.643915 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA94C7A510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAFBC64CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAFD138920>]}
+[0m16:41:14.644920 [debug] [MainThread]: Flushing usage events
+[0m16:41:15.035576 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:41:45.176593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013DF7C12090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013DF7C12330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013DF7C123F0>]}
+
+
+============================== 16:41:45.180596 | 48286f29-6cfc-490c-8197-8f05de642d73 ==============================
+[0m16:41:45.180596 [info ] [MainThread]: Running with dbt=1.9.2
+[0m16:41:45.181596 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\eobay\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:41:45.200597 [info ] [MainThread]: dbt version: 1.9.2
+[0m16:41:45.201597 [info ] [MainThread]: python version: 3.12.3
+[0m16:41:45.202593 [info ] [MainThread]: python path: C:\Users\eobay\Documents\Crypto-Whale-Alert-System\myenv\Scripts\python.exe
+[0m16:41:45.203596 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m16:41:45.976737 [info ] [MainThread]: Using profiles dir at C:\Users\eobay\.dbt
+[0m16:41:45.977671 [info ] [MainThread]: Using profiles.yml file at C:\Users\eobay\.dbt\profiles.yml
+[0m16:41:45.978709 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\eobay\Documents\Crypto-Whale-Alert-System\dbt_project.yml
+[0m16:41:45.979676 [info ] [MainThread]: adapter type: snowflake
+[0m16:41:45.980668 [info ] [MainThread]: adapter version: 1.9.0
+[0m16:41:45.980668 [info ] [MainThread]: Configuration:
+[0m16:41:45.981668 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:41:45.981668 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:41:45.982818 [info ] [MainThread]: Required dependencies:
+[0m16:41:45.982818 [debug] [MainThread]: Executing "git --help"
+[0m16:41:46.061832 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:41:46.062826 [debug] [MainThread]: STDERR: "b''"
+[0m16:41:46.062826 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:41:46.063841 [info ] [MainThread]: Connection:
+[0m16:41:46.064824 [info ] [MainThread]:   account: yp89889.uk-south.azure
+[0m16:41:46.064824 [info ] [MainThread]:   user: DIGIT
+[0m16:41:46.065833 [info ] [MainThread]:   database: BITCOIN_TRANSCATIONS
+[0m16:41:46.065833 [info ] [MainThread]:   warehouse: BITCON_COMPUTE
+[0m16:41:46.066825 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m16:41:46.066825 [info ] [MainThread]:   schema: PUBLIC
+[0m16:41:46.068042 [info ] [MainThread]:   authenticator: None
+[0m16:41:46.068042 [info ] [MainThread]:   oauth_client_id: None
+[0m16:41:46.069070 [info ] [MainThread]:   query_tag: None
+[0m16:41:46.070049 [info ] [MainThread]:   client_session_keep_alive: False
+[0m16:41:46.070049 [info ] [MainThread]:   host: None
+[0m16:41:46.071064 [info ] [MainThread]:   port: None
+[0m16:41:46.072066 [info ] [MainThread]:   proxy_host: None
+[0m16:41:46.072066 [info ] [MainThread]:   proxy_port: None
+[0m16:41:46.073050 [info ] [MainThread]:   protocol: None
+[0m16:41:46.074051 [info ] [MainThread]:   connect_retries: 1
+[0m16:41:46.075051 [info ] [MainThread]:   connect_timeout: None
+[0m16:41:46.075051 [info ] [MainThread]:   retry_on_database_errors: False
+[0m16:41:46.076060 [info ] [MainThread]:   retry_all: False
+[0m16:41:46.076060 [info ] [MainThread]:   insecure_mode: False
+[0m16:41:46.077049 [info ] [MainThread]:   reuse_connections: True
+[0m16:41:46.078052 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m16:41:46.631602 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m16:41:46.715749 [debug] [MainThread]: Using snowflake connection "debug"
+[0m16:41:46.715749 [debug] [MainThread]: On debug: select 1 as id
+[0m16:41:46.716748 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:41:47.275595 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m16:41:47.275595 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m16:41:47.276604 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:41:47.277594 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:41:47.278595 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\eobay\Documents\Crypto-Whale-Alert-System\dbt_project.yml> not found
+
+[0m16:41:47.278595 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  250001 (08001): Failed to connect to DB: yp89889.uk-south.azure.snowflakecomputing.com:443. Incorrect username or password was specified.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:41:47.279594 [debug] [MainThread]: Command `dbt debug` failed at 16:41:47.279594 after 2.24 seconds
+[0m16:41:47.280612 [debug] [MainThread]: Connection 'debug' was left open.
+[0m16:41:47.280612 [debug] [MainThread]: On debug: No close available on handle
+[0m16:41:47.281594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013DFA50A000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013DFFAF5100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013E014E9E50>]}
+[0m16:41:47.281594 [debug] [MainThread]: Flushing usage events
+[0m16:41:47.632683 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:42:18.860471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5DE624B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5E07A0320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5E07A0F80>]}
+
+
+============================== 16:42:18.864472 | 2183c211-5671-461c-9139-69872f439506 ==============================
+[0m16:42:18.864472 [info ] [MainThread]: Running with dbt=1.9.2
+[0m16:42:18.865471 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\eobay\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m16:42:18.885476 [info ] [MainThread]: dbt version: 1.9.2
+[0m16:42:18.886468 [info ] [MainThread]: python version: 3.12.3
+[0m16:42:18.887464 [info ] [MainThread]: python path: C:\Users\eobay\Documents\Crypto-Whale-Alert-System\myenv\Scripts\python.exe
+[0m16:42:18.888465 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m16:42:19.644834 [info ] [MainThread]: Using profiles dir at C:\Users\eobay\.dbt
+[0m16:42:19.645846 [info ] [MainThread]: Using profiles.yml file at C:\Users\eobay\.dbt\profiles.yml
+[0m16:42:19.646814 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\eobay\Documents\Crypto-Whale-Alert-System\dbt_project.yml
+[0m16:42:19.647850 [info ] [MainThread]: adapter type: snowflake
+[0m16:42:19.648774 [info ] [MainThread]: adapter version: 1.9.0
+[0m16:42:19.649772 [info ] [MainThread]: Configuration:
+[0m16:42:19.650118 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:42:19.650118 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:42:19.651266 [info ] [MainThread]: Required dependencies:
+[0m16:42:19.652273 [debug] [MainThread]: Executing "git --help"
+[0m16:42:19.725301 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:42:19.726307 [debug] [MainThread]: STDERR: "b''"
+[0m16:42:19.726307 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:42:19.727307 [info ] [MainThread]: Connection:
+[0m16:42:19.728300 [info ] [MainThread]:   account: yp89889.uk-south.azure
+[0m16:42:19.729303 [info ] [MainThread]:   user: DIGIT
+[0m16:42:19.729303 [info ] [MainThread]:   database: BITCOIN_TRANSCATIONS
+[0m16:42:19.730491 [info ] [MainThread]:   warehouse: BITCON_COMPUTE
+[0m16:42:19.731501 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m16:42:19.732501 [info ] [MainThread]:   schema: PUBLIC
+[0m16:42:19.732501 [info ] [MainThread]:   authenticator: None
+[0m16:42:19.733499 [info ] [MainThread]:   oauth_client_id: None
+[0m16:42:19.733499 [info ] [MainThread]:   query_tag: None
+[0m16:42:19.734501 [info ] [MainThread]:   client_session_keep_alive: False
+[0m16:42:19.735368 [info ] [MainThread]:   host: None
+[0m16:42:19.736378 [info ] [MainThread]:   port: None
+[0m16:42:19.736378 [info ] [MainThread]:   proxy_host: None
+[0m16:42:19.737379 [info ] [MainThread]:   proxy_port: None
+[0m16:42:19.738378 [info ] [MainThread]:   protocol: None
+[0m16:42:19.738378 [info ] [MainThread]:   connect_retries: 1
+[0m16:42:19.739375 [info ] [MainThread]:   connect_timeout: None
+[0m16:42:19.740377 [info ] [MainThread]:   retry_on_database_errors: False
+[0m16:42:19.741375 [info ] [MainThread]:   retry_all: False
+[0m16:42:19.741375 [info ] [MainThread]:   insecure_mode: False
+[0m16:42:19.742380 [info ] [MainThread]:   reuse_connections: True
+[0m16:42:19.744375 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m16:42:20.280063 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m16:42:20.369062 [debug] [MainThread]: Using snowflake connection "debug"
+[0m16:42:20.370064 [debug] [MainThread]: On debug: select 1 as id
+[0m16:42:20.370064 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:42:20.809484 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m16:42:20.810475 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m16:42:20.810475 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:42:20.811418 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:42:20.812415 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\eobay\Documents\Crypto-Whale-Alert-System\dbt_project.yml> not found
+
+[0m16:42:20.812415 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  250001 (08001): Failed to connect to DB: yp89889.uk-south.azure.snowflakecomputing.com:443. Incorrect username or password was specified.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:42:20.814425 [debug] [MainThread]: Command `dbt debug` failed at 16:42:20.813415 after 2.09 seconds
+[0m16:42:20.814425 [debug] [MainThread]: Connection 'debug' was left open.
+[0m16:42:20.814425 [debug] [MainThread]: On debug: No close available on handle
+[0m16:42:20.815422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5E0A157F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5FA0CC5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5DE624B00>]}
+[0m16:42:20.815422 [debug] [MainThread]: Flushing usage events
+[0m16:42:21.204927 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:00:54.515957 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E189E94EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E189D9EF60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E18BEC3320>]}
+
+
+============================== 22:00:54.531665 | d75503d9-10ca-4859-a0d8-1cb17bc91116 ==============================
+[0m22:00:54.531665 [info ] [MainThread]: Running with dbt=1.9.2
+[0m22:00:54.532665 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\eobay\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run -s Transaction_table', 'send_anonymous_usage_stats': 'True'}
+[0m22:00:54.533665 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\eobay\Documents\Crypto-Whale-Alert-System\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:00:54.535668 [debug] [MainThread]: Command `dbt run` failed at 22:00:54.535668 after 0.26 seconds
+[0m22:00:54.536665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E18E59D9A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E18E668EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E189E94EF0>]}
+[0m22:00:54.537667 [debug] [MainThread]: Flushing usage events
+[0m22:00:54.933321 [debug] [MainThread]: An error was encountered while trying to flush usage events

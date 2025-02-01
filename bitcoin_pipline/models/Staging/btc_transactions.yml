@@ -1,0 +1,12 @@
+version: 2
+
+
+sources:
+  - name: bitcoin_transdb
+    database: BITCOIN_TRANSCATIONS
+    schema:  PUBLIC
+    tables: 
+      - name: UNCONFIRMED_TRANSACTIONS
+
+
+ 
